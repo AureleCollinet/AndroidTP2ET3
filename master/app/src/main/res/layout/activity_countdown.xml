@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alegra08.tp2.CountdownActivity">
+
+    <TextView
+        android:id="@+id/countdownTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="191dp"
+        android:layout_marginStart="193dp"
+        android:layout_marginTop="196dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/countdownButton"
+        android:layout_width="0dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="74dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginStart="1dp"
+        android:onClick="validateOnClick"
+        android:text="Set Duration"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="144dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginStart="1dp"
+        android:onClick="startCountdown"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/refreshButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/refreshButton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="144dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginStart="11dp"
+        android:onClick="refreshCountdown"
+        android:text="Refresh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/stopButton"
+        app:layout_constraintStart_toEndOf="@+id/startButton" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="144dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginStart="11dp"
+        android:onClick="stopCountdown"
+        android:text="Stop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/refreshButton" />
+</android.support.constraint.ConstraintLayout>
