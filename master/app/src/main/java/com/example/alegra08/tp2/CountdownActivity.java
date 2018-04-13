@@ -61,6 +61,7 @@ public class CountdownActivity extends AppCompatActivity {
     @Override
     protected void onResume(){
         super.onResume();
+        alarmIntent = PendingIntent.getActivity(this, 1, new Intent(this, End_of_countdown.class), 0);
         am.cancel(alarmIntent);
     }
 
